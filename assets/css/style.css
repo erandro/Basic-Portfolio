@@ -20,7 +20,8 @@ h6 {
     font-size: 10px;
     color: rgb(255, 255, 255);
 }
-a, p {
+a, p, form {
+    font-size: 16px;
     color: rgb(141, 126, 144);
 }
 P {
@@ -45,6 +46,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.header_back {
+    background-color: white;
+    width: 100%;
     border-style: solid;
     border-width: 0 0 2px 0;
     border-color: rgb(140, 0, 175);
@@ -77,6 +82,7 @@ header {
     margin-top: 25px;
     background-color: rgb(255, 255, 255);
     min-height: 430px;
+    padding-bottom: 50px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .second_title {
@@ -93,31 +99,111 @@ header {
     width: 920px;
     margin: 0 auto;
 }
-.info img {
+
+/* About */
+
+.About img {
     padding: 20px 20px 20px 0;
     width: 200px;
     height: auto;
     float: left;
-
 }
-.info p {
+.About p {
     padding: 20px 0 0 0;
 }
-.info p:last-child {
+.About p:last-child {
     padding: 20px 0 20px 0;
+}
+
+/* Portfolio */
+
+.project_box {
+    height: 220px;
+    padding:20px 0 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#project_1, #project_2, #project_3,
+#project_4, #project_5, #project_6 {
+    background-color: black;
+    height: 200px;
+    width: 280px;
+    background-size: cover;
+    display: flex;
+}
+#project_1 {
+    background-image: url("http://www.wnnca.org/couch/uploads/image/plants-animals/birds/thumb300x200/White-crowned-Sparrow.jpg");
+}
+#project_2 {
+    background-image: url("http://www.dannygreenphotography.com/media/Moorland%20BOP%20guest%20gallery%20images/Ron%20Brown%20Golden%20Eagle-.jpg");
+}
+#project_3 {
+    background-image: url("http://www.pgecurrents.com/wp-content/uploads/2013/02/300x200_Lights-Out-for-Birds-Western-Tanager.jpg");
+}
+#project_4 {
+    background-image: url("http://www.dannygreenphotography.com/media/Moorland%20BOP%20guest%20gallery%20images/Ron%20Brown%20Peregrine-3590.jpg");
+}
+#project_5 {
+    background-image: url("https://ssl.c.photoshelter.com/img-get/I0000XzT1KKiKmcY/s/860/860/Chris%20Morton%20Hungarian%20Spring%20Birds%203.jpg");
+}
+#project_6 {
+    background-image: url("https://kidsanimalsfacts.com/wp-content/uploads/2017/10/Yellow-shouldered_Blackbird.jpg");
+}
+span {
+    width: 280px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    background-color: rgb(168, 93, 187);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    align-self: flex-end;
+    position: relative;
+    right:10px;
+}
+
+/* Contact */
+
+input {
+    width: 100%;
+    height: 30px;
+    padding-left: 5px;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    padding-left: 5px;
+}
+input[type=submit] {
+    height: 40px;
+    background-color: rgb(140, 0, 175);
+    color: rgb(255, 255, 255);
+    border-width: 2px;
+    border-color: rgb(168, 93, 187);
+    border-radius: 6px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: rgb(168, 93, 187);
+    border-color: rgb(140, 0, 175);
 }
 
 /* Footer */
 
 footer {
-    background-color: rgb(141, 126, 144);
     height: 80px;
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
+}
+.footer_back {
+    width: 100%;
+    background-color: rgb(141, 126, 144);
     border-style: solid;
     border-width: 2px 0 0 0;
-    border-color: rgb(140, 0, 175);
+    border-color: rgb(140, 0, 175); 
 }
 .container h6 {
     padding-bottom: 20px;
